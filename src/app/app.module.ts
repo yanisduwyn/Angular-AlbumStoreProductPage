@@ -16,7 +16,7 @@ import { Z_FULL_FLUSH } from 'zlib';
 const appRoutes: Routes = [
   {path: 'products', component: ProductListComponent},
   {path: 'product/:id', component: ProductPageComponent},
-  {path: '', redirectTo: ProductService}
+  {path: '', redirectTo: 'products', pathMatch: 'full'}
 ];
 
 @NgModule({
