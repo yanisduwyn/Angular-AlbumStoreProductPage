@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import {} from '../product';
+import { Product } from '../product';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -9,9 +9,7 @@ import { ProductService } from '../product.service';
 })
 export class ProductListComponent implements OnInit {
 
-  id: number;
-  artistName: string;
-  albumName: string;
+  
   products: Product[];
 
   constructor(private _productservice:ProductService) { }
